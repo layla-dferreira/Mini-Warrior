@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://32ctnoljedjg"]
+
+[ext_resource type="PackedScene" uid="uid://c4g25y0wj1r4p" path="res://misc/mushroom.tscn" id="1_ybs1g"]
+
+[node name="MushroomGold" instance=ExtResource("1_ybs1g")]
+self_modulate = Color(0.95, 0.920233, 0.057, 0.972549)
+position = Vector2(-0.999999, -23)
+scale = Vector2(1.67188, 1.67188)
+regeneration_amount = 100
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+visible = false

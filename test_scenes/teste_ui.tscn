@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://bnbxempppngug"]
+
+[ext_resource type="PackedScene" uid="uid://cxc10q3qa4hf0" path="res://player/player.tscn" id="1_jfcv4"]
+[ext_resource type="PackedScene" uid="uid://h6kkgparfno1" path="res://UI/game_ui.tscn" id="2_pymni"]
+[ext_resource type="PackedScene" uid="uid://m0uu3m4hn3cc" path="res://enemies/goblin.tscn" id="3_wk3im"]
+[ext_resource type="PackedScene" uid="uid://c2dxnkp7cd0i6" path="res://enemies/sheep.tscn" id="4_ye6wm"]
+[ext_resource type="PackedScene" uid="uid://rbf5ufitgwi7" path="res://enemies/pawn.tscn" id="5_k78vu"]
+[ext_resource type="PackedScene" uid="uid://c4g25y0wj1r4p" path="res://misc/mushroom.tscn" id="6_atldb"]
+
+[node name="TesteUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_jfcv4")]
+position = Vector2(355, 226)
+
+[node name="GameUI" parent="." instance=ExtResource("2_pymni")]
+
+[node name="Goblin" parent="." instance=ExtResource("3_wk3im")]
+position = Vector2(884, 220)
+
+[node name="Sheep" parent="." instance=ExtResource("4_ye6wm")]
+position = Vector2(863, 343)
+
+[node name="Sheep2" parent="." instance=ExtResource("4_ye6wm")]
+position = Vector2(1045, 395)
+
+[node name="Pawn" parent="." instance=ExtResource("5_k78vu")]
+position = Vector2(939, 493)
+
+[node name="Mushroom" parent="." instance=ExtResource("6_atldb")]
+position = Vector2(561, 305)
+
+[node name="Mushroom2" parent="." instance=ExtResource("6_atldb")]
+position = Vector2(470, 373)
+
+[node name="Mushroom3" parent="." instance=ExtResource("6_atldb")]
+position = Vector2(531, 141)
+
+[node name="Mushroom4" parent="." instance=ExtResource("6_atldb")]
+position = Vector2(295, 397)

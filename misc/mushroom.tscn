@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4g25y0wj1r4p"]
+
+[ext_resource type="Texture2D" uid="uid://boqq5isy83ilb" path="res://addons/Tiny Swords/Deco/03.png" id="1_huamm"]
+[ext_resource type="Script" path="res://misc/life_regeneratior.gd" id="2_ffaie"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdot8"]
+atlas = ExtResource("1_huamm")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jw52p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdot8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qbn3b"]
+radius = 16.0312
+
+[node name="Mushroom" type="AnimatedSprite2D"]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_jw52p")
+autoplay = "default"
+frame_progress = 1.0
+script = ExtResource("2_ffaie")
+regeneration_amount = 20
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_qbn3b")

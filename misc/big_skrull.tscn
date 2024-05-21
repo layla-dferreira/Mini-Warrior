@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://by2i15ftxky1h"]
+
+[ext_resource type="PackedScene" uid="uid://bgn3m1mdf4lrg" path="res://misc/skrull.tscn" id="1_peqmh"]
+
+[node name="BigSkrull" instance=ExtResource("1_peqmh")]
+position = Vector2(1, -11)
+scale = Vector2(2, 2)
